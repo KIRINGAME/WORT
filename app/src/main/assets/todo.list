@@ -1,0 +1,6 @@
+TODO: 
+[ ]升级Love12
+[ ]支持https
+[√]支持math.bit操作
+[√]set_global_cb 参数支持
+[×]load script 修改方式到Lua内

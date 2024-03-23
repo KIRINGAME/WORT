@@ -1,0 +1,16 @@
+<panel name="iap_root" align="xx,yy" visible="false">
+    <panel align="xx,yy" name="back" touch="login.on_touch_close"/>
+    <image name="main" align="xx,y2" area="0,0,540,350" image="img/bg_dict.png" align_type="stretch" image_slice="17,17,17,17">
+        <panel name="remove_ads" align="xx,y1" area="0,10,400,170" align_type="scale">
+            <image align="xx,y2" area="0,0,400,100" image="img/btn_background.png" align_type="scale" image_slice="17,17,17,17" touch="login.on_touch_remove_ads">
+                <label name="1" align="xx,yy" text_align="xx,yy" area="0,0,400,100" text="Anzeigen entfernen" text_font="3" text_color="0x000000FF" text_size="36"/>
+            </image>
+        </panel>
+
+        <panel name="restore_buy" align="xx,y1" area="0,180,400,170" align_type="scale">
+            <image align="xx,y2" area="0,0,400,100" image="img/btn_background.png" align_type="scale" image_slice="17,17,17,17" touch="login.on_touch_restore_buy">
+                <label name="2" align="xx,yy" text_align="xx,yy" area="0,0,400,100" text="wiederherstellen kaufen" text_font="3" text_color="0x000000FF" text_size="36"/>
+            </image>
+        </panel>
+    </image>
+</panel>

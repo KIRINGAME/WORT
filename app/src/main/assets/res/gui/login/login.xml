@@ -1,0 +1,26 @@
+<panel name="login_root" align="xx,yy" visible="false">
+    <panel align="xx,yy" name="main">
+        <image align="xx,y1" area="0,16,256,256" align_type="scale" image="img/icon_bg.png" visible="true"/>
+
+        <panel name="day" align="xx,yy" area="0,0,400,170" align_type="scale">
+            <image name="img" align="x1,y1" area="0,0,60,60" image="img/calendar/icons8-calendar-31-60.png" align_type="scale" image_fill="stretch"/>
+            <image align="xx,y2" area="0,0,400,100" image="img/btn_background.png" align_type="scale" image_slice="17,17,17,17" touch="login.on_touch_day">
+                <label name="1" align="xx,yy" text_align="xx,yy" area="0,0,400,100" text="@2" text_font="3" text_color="0x000000FF" text_size="36"/>
+            </image>
+        </panel>
+
+        <panel name="stage" align="xx,yy" area="0,200,400,170" align_type="scale">
+            <image name="img" align="x1,y1" area="0,0,50,50" image="img/icons8-level-64.png" align_type="scale" image_fill="stretch"/>
+            <image align="xx,y2" area="0,0,400,100" image="img/btn_background.png" align_type="scale" image_slice="17,17,17,17" touch="login.on_touch_stage">
+                <label name="2" align="xx,yy" text_align="xx,yy" area="0,0,400,100" text="@1" text_font="3" text_color="0x000000FF" text_size="36"/>
+            </image>
+        </panel>
+
+        <image align="x2,y1" name="sound" area="10,10,76,76" image="img/btn_sound_stop.png" align_type="scale" touch="login.on_touch_sound">
+        </image>
+        <image align="x2,y1" name="music" area="10,96,76,76" image="img/btn_music_stop.png" align_type="scale" touch="login.on_touch_music">
+        </image>
+        <image align="x2,y1" name="remove" area="10,182,76,76" image="img/icon_remove_ads.png" align_type="scale" touch="login.on_touch_open_iap">
+        </image>
+    </panel>
+</panel>

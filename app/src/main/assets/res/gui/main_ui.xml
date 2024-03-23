@@ -1,0 +1,8 @@
+<panel name="root" align="xx,yy">
+    <panel import="login/login.xml"/>
+    <panel import="stage/stage.xml"/>
+    <panel import="chessboard/chessboard.xml"/>
+    <panel import="tips/tips.xml"/>
+    <panel import="iap/iap.xml"/>
+    <panel import="login/loading.xml"/>
+</panel>

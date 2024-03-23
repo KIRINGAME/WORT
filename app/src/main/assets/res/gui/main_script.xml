@@ -1,0 +1,6 @@
+<script >
+    <script module="login" file="login/login.lua" />
+    <script module="stage" file="stage/stage.lua" />
+    <script module="chessboard" file="chessboard/chessboard.lua" />
+    <script module="tips" file="tips/tips.lua" />
+</script>

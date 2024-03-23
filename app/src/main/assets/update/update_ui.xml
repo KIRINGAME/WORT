@@ -1,0 +1,6 @@
+<panel name="update_root" align="xx,yy" visible="true">
+    <panel align="xx,yy" name="main">
+        <image align="xx,yy" align_type="stretch" image="img/bg_loading.png" visible="false"/>
+        <image align="xx,yy" area="0,0,360,360" align_type="stretch" image="img/logo.png" visible="true"/>
+    </panel>
+</panel>

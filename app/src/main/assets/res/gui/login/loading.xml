@@ -1,0 +1,4 @@
+<panel name="loading_root" align="xx,yy">
+    <image align="xx,yy" align_type="stretch" image="img/bg_loading.png" visible="true"/>
+    <image align="xx,yy" area="0,0,360,360" align_type="scale" image="img/logo.png" visible="true"/>
+</panel>

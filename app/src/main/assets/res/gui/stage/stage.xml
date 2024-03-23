@@ -1,0 +1,16 @@
+<panel name="stage_root" align="xx,yy" visible="false">
+    <panel align="xx,y1" area="0,0,540,100">
+        <image name="stage_back" align="x1,y1" area="0,0,76,76" image="img/btn_back.png" align_type="scale" touch="stage.on_touch_back">
+        </image>
+    </panel>
+    <panel name="stage_con" align="xx,y1" area="0,100,540,860">
+        <panel name="stage_beg" align="xx,y1" area="0,0,500,60">
+            <image align="xx,yy" area="0,0,500,4" image="img/bg_tips.png" />
+        </panel>
+        <panel name="stage_list" align="xx,y1" area="0,60,500,300">
+        </panel>
+        <panel name="stage_end" align="xx,y1" area="0,360,500,60">
+            <image align="xx,yy" area="0,0,500,4" image="img/bg_tips.png" />
+        </panel>
+    </panel>
+</panel>

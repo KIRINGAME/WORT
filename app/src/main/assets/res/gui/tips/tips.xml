@@ -1,0 +1,5 @@
+<panel name="tips_root" align="xx,yy" visible="false">
+    <image name="tips_bg" align="xx,yy" area="0,-60,500,54" image="img/bg_tips.png">
+        <label name="tips_txt" align="xx,yy" area="0,0,500,54" align_type="scale" text="" text_font="3" text_size="36"/>
+    </image>
+</panel>

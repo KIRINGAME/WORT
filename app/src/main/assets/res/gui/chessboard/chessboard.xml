@@ -1,0 +1,60 @@
+<panel name="chessboard_root" align="xx,yy" visible="false">
+    <panel name="top" align="xx,y1" area="0,0,540,80">
+        <image name="chessboard_back" align="x1,y1" area="0,0,76,76" image="img/btn_back.png" align_type="scale" touch="chessboard.on_touch_back">
+        </image>
+        <image align="x2,y1" area="0,0,76,76" image="img/icon_dict.png" align_type="scale" touch="chessboard.on_touch_dict" >
+        </image>
+        <image name="remove" align="x2,y1" area="80,0,76,76" image="img/icon_remove_ads.png" align_type="scale" touch="login.on_touch_open_iap" >
+        </image>
+        <panel name="point_main" align="xx,y1" area="0,0,200,80" align_type="scale">
+            <image align="x1,yy" area="8,0,200,50" image="img/bg_gray.png" align_type="scale" image_slice="17,17,17,17"/>
+            <image align="x1,yy" area="0,0,80,80" image="img/icon_gold_small.png" align_type="scale" touch="login.on_touch_memory_info"/>
+            <label name="point" align="x1,yy" text_align="x1,yy" text_color="0xfc913aFF" area="84,0,120,30" align_type="scale" text="" text_font="1" text_size="36"/>
+        </panel>
+    </panel>
+    <panel name="chessboard_main" align="xx,y1" area="0,80,540,540"/>
+    <panel name="chessboard_ctrl" align="xx,y2" area="0,10,540,390">
+        <panel name="chessboard_revolver" align="xx,y2" area="0,0,330,330" align_type="scale"/>
+        <image name="spell_bg" align="xx,y1" area="0,0,380,54" image="img/bg_tips.png">
+            <label name="spell_word" align="xx,yy" area="0,0,380,54" align_type="scale" text="" text_font="1" text_size="40"/>
+        </image>
+        <image align="x1,y2" area="0,0,80,80" image="img/icon_shuffle.png" align_type="scale" touch="chessboard.on_touch_shuffle">
+        </image>
+        <image align="x2,y2" area="0,0,80,80" image="img/icon_hint.png" align_type="scale" touch="chessboard.on_touch_hint">
+        </image>
+        <image align="x2,y2" area="0,100,80,80" image="img/icon_coin.png" align_type="scale" touch="chessboard.on_touch_coin_msgbox">
+        </image>
+    </panel>
+    <image name="banner" align="xx,y1" area="0,80,256,256" image="img/badge.png" align_type="scale" visible="false">
+    </image>
+    
+    <panel name="dict_win" align="xx,yy" visible="false" touch="chessboard.on_touch_blank">
+        <image align="xx,yy" align_type="stretch" image="img/bg_loading.png" image_color="0xFFFFFF88" visible="true" touch="chessboard.on_touch_dict_win"/>
+        <image name="dict_win_bg" align="xx,yy" area="0,0,500,800" image="img/bg_dict.png" align_type="stretch" image_slice="17,17,17,17">
+            <label align="xx,y1" name="word" area="0,10,380,40" align_type="scale" text="" text_color="0x6AAFE6FF" text_font="2" text_size="40"/>
+            
+            <image align="x1,y1" name="list" area="0,60,500,650" align_type="stretch" image="img/bg_topic.png" image_slice="17,17,17,17" image_color="0xFFFFFF88">
+                <scrollviewer name="sv" align="xx,yy" area="0,0,480,620" align_type="stretch" >
+                    <label name="word_list" align="xx,y1" text_align="x1,y1" area="0,0,480,620" text_font="2" text_size="32" align_type="stretch"/>
+                </scrollviewer>
+            </image>
+            <image align="x2,y1" area="10,10,38,38" image="img/btn_close.png" align_type="scale" touch="chessboard.on_touch_dict_win"/>
+            <image align="x1,y2" area="10,10,76,76" image="img/btn_back.png" align_type="scale" touch="chessboard.on_touch_dict_back"/>
+            <label align="xx,y2" name="count" area="0,30,380,40" align_type="scale" text="1/2" text_color="0xFFFFFFFF" text_font="2" text_align="xx,yy" text_size="36"/>
+            <image align="x2,y2" area="10,10,76,76" image="img/btn_front.png" align_type="scale" touch="chessboard.on_touch_dict_front"/>
+        </image>
+    </panel>
+
+    <panel name="msgbox_win" touch="chessboard.on_touch_msgbox" align="xx,yy" visible="false">
+        <image align="xx,yy" area="0,0,540,400" image="img/bg_dict.png" align_type="stretch" image_slice="17,17,17,17">
+        <image name="dict_win_bg" align="xx,yy" area="0,0,500,360" image="img/bg_topic.png" align_type="stretch" image_slice="17,17,17,17" image_color="0xFFFFFFAA"/>
+            <label align="xx,y1" text="@3" area="0,60,480,90" text_font="3" text_size="36" /> 
+            <image name="button1" align="x1,y2" area="140,40,120,80" image="img/btn_background.png" align_type="scale" image_slice="17,17,17,17" touch="chessboard.on_touch_coin">
+                <label align="xx,yy" text="@7" text_font="3" text_color="0x000000FF" text_size="36" />
+            </image>
+            <image name="button2" align="x2,y2" area="140,40,120,80" image="img/btn_background.png" align_type="scale" image_slice="17,17,17,17" >
+                <label align="xx,yy" text="@8" text_font="3" text_color="0x000000FF" text_size="36" />
+            </image>                                 
+        </image>
+    </panel>
+</panel>
